@@ -1,0 +1,24 @@
+= Array Comparison: Java vs C#
+
+== Concept
+This section compares how arrays are handled in Java and C#.
+
+[cols="2,2,3", options="header"]
+|===
+| **Concept**              | **Java**                            | **C#**                                     | **Notes**
+
+| Array declaration        | `int[] nums;` or `int nums[];`      | `int[] nums;`                              | Both support similar syntax, but Java allows both variations.
+| Array initialization     | `int[] nums = {1, 2, 3};`           | `int[] nums = {1, 2, 3};` or `new int[] {1, 2, 3};` | Initialization is very similar.
+| Fixed size arrays        | `new int[5]`                        | `new int[5]`                               | Arrays in both languages are of fixed size once declared.
+| Array length property    | `nums.length`                      | `nums.Length`                              | Java uses lowercase `length`, C# uses `Length` (capitalized).
+| Foreach iteration        | `for (int n : nums)`               | `foreach (int n in nums)`                 | Syntactically different, but functionally the same.
+| Multidimensional arrays  | `int[][] matrix = new int[3][3];`  | `int[,] matrix = new int[3,3];`           | Java uses jagged arrays; C# supports both jagged and multidimensional arrays.
+| Arrays are objects       | Yes (`Object`)                     | Yes (`System.Array`)                      | Arrays inherit from the base object class in both languages.
+| Utility methods          | `java.util.Arrays` class           | `System.Array`, `System.Linq`             | Java uses `Arrays.toString()`, etc. C# uses methods like `Join`, `Sort`, and LINQ.
+| Array type checking      | `instanceof int[]`                 | `is int[]`                                | Used to verify the type of an array at runtime.
+| Arrays as method args    | `void method(int[] a)`             | `void Method(int[] a)`                    | Both languages pass array references to methods.
+| Null assignment          | Arrays can be `null`               | Arrays can be `null`                      | Behavior is consistent across both.
+| Default values           | Zero/default-initialized           | Zero/default-initialized                  | Array elements are auto-initialized to default values.
+| Copy behavior            | Reference copied                   | Reference copied                          | Assigning arrays copies the reference, not the contents.
+|===
+
