@@ -20,6 +20,28 @@ This project helps developers who are familiar with one language (Java or C#) tr
 - **Summary Table**  
   A consolidated summary of all the comparisons, providing a quick reference for the main points discussed.
 
+## Table of Contents
+
+### Core Concepts
+- [Access Modifier Keyword Comparison](AccessModifierKeywordComparison.adoc)  
+- [Type Declaration & Access Manipulation](TypeDeclarationAccessManipulationKeywords.adoc)  
+- [Simple Types & Constants](SimpleTypeConstantKeywords.adoc)  
+
+### Control Flow
+- [Flow Control Keywords](FlowControlKeyword.adoc)  
+- [Exception Handling](ExceptionHandlingKeywords.adoc)  
+
+### Operators & Expressions
+- [Operators Reference](Operators.adoc)  
+- [Precedence & Associativity Rules](PrecedenceAssociativity.adoc)  
+
+### Advanced Topics
+- [Package/Namespace Management](PackageNamespaceKeywords.adoc)  
+- [Unmanaged Code Keywords](UnmanagedCodeKeywords.adoc)  
+
+### Overview
+- [Summary of Concepts](Summary.adoc)
+
 ## Structure
 
 The comparisons are presented in the following tables:
