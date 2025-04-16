@@ -1,0 +1,20 @@
+= Data Types Comparison
+
+== Concept
+This section compares the primitive and object data types in Java and C#.
+
+[cols="2,2,3", options="header"]
+|===
+| **Concept**                     | **Java**                          | **C#**                               | **Notes** 
+
+| Integer types                   | `byte`, `short`, `int`, `long`     | `byte`, `short`, `int`, `long`        | Same names and behavior (except sizes are always fixed in C#).
+| Floating-point types             | `float`, `double`                  | `float`, `double`                     | Same names; both use f or d suffix for literals.
+| Character type                   | `char`                             | `char`                               | Both represent a single Unicode character.
+| Boolean type                     | `boolean`                          | `bool`                               | Different keywords, same purpose.
+| String type                      | `String` (capitalized class)       | `string` (alias for `System.String`)  | Java treats it like a class; C# has both `string` and `String`.
+| Constant declaration             | `final`                            | `const`                              | Used for compile-time constants.
+| Read-only (runtime constant)     | Not available (only `final`)       | `readonly`                           | C# has both `const` (compile-time) and `readonly` (runtime).
+| Null keyword                     | `null`                             | `null`                               | Same keyword.
+| Primitive vs object types        | Primitives + wrapper classes (`Integer`, `Double`, etc.) | All types are objects (even `int`, via boxing) | Java distinguishes more clearly between primitives and objects.
+| Default values                   | e.g., `0`, `false`, `null`         | Same: `0`, `false`, `null`            | Default initialization values are similar.
+|===

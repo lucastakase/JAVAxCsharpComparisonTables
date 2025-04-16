@@ -1,0 +1,19 @@
+= Exception Handling Keywords Comparison
+
+== Concept
+This section compares the exception handling keywords in Java and C#.
+
+[cols="2,2,3", options="header"]
+|===
+| **Concept**            | **Java**                      | **C#**                              | **Notes** 
+
+| `try` block             | `try { ... }`                 | `try { ... }`                       | Same syntax to define a block of code that may throw an exception. 
+| `catch` block           | `catch (Exception e) { ... }` | `catch (Exception e) { ... }`       | Same syntax for catching exceptions, though C# also allows pattern matching in `catch` (C# 7.0+).
+| `finally` block         | `finally { ... }`             | `finally { ... }`                   | Same syntax for the block that runs regardless of exception occurrence.
+| `throw` statement       | `throw new Exception("message");` | `throw new Exception("message");`    | Same syntax to throw an exception manually.
+| `throws` declaration    | `throws Exception`             | N/A                                 | Java uses `throws` to declare methods that can throw exceptions. C# doesn't have an equivalent, using `try-catch` instead.
+| `try-with-resources`    | `try (Resource res = new Resource()) { ... }` | N/A                                 | Java supports `try-with-resources` to automatically close resources after use, a feature not in C#.
+| `catch` (multi-catch)   | `catch (IOException | SQLException e) { ... }` | `catch (IOException e) when (condition) { ... }` | Java allows multi-catch in a single `catch` block. C# uses conditional `when` for filtering exceptions.
+| `throw` (rethrowing)    | `throw;`                       | `throw;`                             | Both support rethrowing an exception with `throw;` without specifying the exception again.
+| `unchecked exceptions`  | RuntimeExceptions (unchecked) | All exceptions are unchecked by default | In Java, `RuntimeException` and its subclasses do not need to be declared in `throws`. In C#, all exceptions are unchecked.
+|===

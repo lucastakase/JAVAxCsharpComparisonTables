@@ -1,0 +1,33 @@
+= Precedence and Associativity Comparison
+
+== Concept
+This section compares the operator precedence and associativity in Java and C#.
+
+[cols="2,2,3", options="header"]
+|===
+| **Concept**                  | **Java**                        | **C#**                              | **Notes** 
+
+| Parentheses                  | `()`                            | `()`                                | Both have the same highest precedence, used for grouping expressions.
+| Array indexing               | `[]`                            | `[]`                                | Same precedence for array indexing.
+| Method call                  | `()`                            | `()`                                | Same precedence for method invocation.
+| Unary plus and minus         | `+`, `-`                        | `+`, `-`                            | Same precedence for unary plus and minus operations.
+| Increment/Decrement operators | `++`, `--`                      | `++`, `--`                          | Same precedence for increment and decrement operators.
+| Logical NOT and Bitwise NOT  | `!`, `~`                        | `!`, `~`                            | Same precedence for logical and bitwise NOT.
+| Multiplication, Division, Modulus | `*`, `/`, `%`               | `*`, `/`, `%`                       | Same precedence for multiplication, division, and modulus.
+| Addition and Subtraction     | `+`, `-`                        | `+`, `-`                            | Same precedence for addition and subtraction.
+| Bitwise shift operators      | `<<`, `>>`, `>>>`               | `<<`, `>>`, `>>>`                   | Same precedence for bitwise shifts.
+| Relational and Equality operators | `==`, `!=`, `<`, `>`, `<=`, `>=` | `==`, `!=`, `<`, `>`, `<=`, `>=`     | Same precedence for relational and equality operators.
+| Bitwise AND                  | `&`                             | `&`                                 | Same precedence for bitwise AND.
+| Bitwise XOR                  | `^`                             | `^`                                 | Same precedence for bitwise XOR.
+| Bitwise OR                   | `|`                             | `|`                                 | Same precedence for bitwise OR.
+| Logical AND                  | `&&`                            | `&&`                                | Same precedence for logical AND.
+| Logical OR                   | `||`                            | `||`                                | Same precedence for logical OR.
+| Conditional (ternary) operator | `? :`                          | `? :`                               | Same precedence for ternary operator.
+| Assignment operators         | `=`, `+=`, `-=`, `*=`, `/=`, `%=` | `=`, `+=`, `-=`, `*=`, `/=`, `%=`    | Same precedence for assignment operators.
+| Lambda operator              | ->                              | `=>`                                | C# uses the lambda operator (`=>`) for defining lambda expressions.
+| `new` operator               | `new`                           | `new`                               | Same precedence for object creation using `new`.
+| `typeof` (C# only)           | N/A                             | `typeof`                            | C# uses `typeof` to get the type of a class or struct.
+| `sizeof` (C# only)           | N/A                             | `sizeof`                            | C# uses `sizeof` to get the size of a type in memory.
+| `await` (C# only)            | N/A                             | `await`                             | C# uses `await` for asynchronous programming; has specific precedence when used in async operations.
+| `async` (C# only)            | N/A                             | `async`                             | C# uses `async` for defining asynchronous methods, which has its own precedence when used.
+|===

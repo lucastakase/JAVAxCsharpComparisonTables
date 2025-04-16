@@ -1,0 +1,27 @@
+= Class, Interface, and Member Comparison
+
+== Concept
+This section compares the syntax for class, interface, enum declarations, and member access in Java and C#.
+
+[cols="2,2,3", options="header"]
+|===
+| **Concept**                     | **Java**                          | **C#**                               | **Notes** 
+
+| Class declaration               | `class ClassName`                 | `class ClassName`                    | Same syntax for declaring a class.
+| Interface declaration           | `interface InterfaceName`         | `interface InterfaceName`            | Same syntax for declaring an interface.
+| Enum declaration                | `enum EnumName`                   | `enum EnumName`                      | Same syntax for declaring an enum.
+| Abstract class                  | `abstract class ClassName`        | `abstract class ClassName`           | Same syntax for declaring an abstract class.
+| Access modifiers (public)       | `public`                          | `public`                             | Same keyword for making members accessible anywhere.
+| Access modifiers (protected)    | `protected`                       | `protected`                          | Same keyword for making members accessible within same package and subclasses.
+| Access modifiers (private)      | `private`                         | `private`                            | Same keyword for making members accessible only within the same class.
+| Default access (no modifier)    | Package-private (no modifier)     | Internal (default)                   | Java defaults to package-private, while C# defaults to internal (accessible within the same assembly).
+| Static members                  | `static`                          | `static`                             | Same keyword for class-level members (not tied to instances).
+| Final members (constant)        | `final`                           | `const`                              | Java uses `final` for constant fields, while C# uses `const`.
+| Read-only (runtime constant)    | Not available (only `final`)      | `readonly`                           | C# provides `readonly` for fields that can only be set at runtime.
+| Instance initialization         | Constructor (`ClassName()`)       | Constructor (`ClassName()`)          | Both use constructors to initialize instances.
+| Type casting (upcasting)        | Implicit                         | Implicit                             | Both allow implicit upcasting (casting to a base type).
+| Type casting (downcasting)      | Explicit (`(Type) obj`)           | Explicit (`(Type) obj`)              | Both require explicit casting for downcasting (casting to a derived type).
+| Type checking                   | `instanceof`                      | `is`                                 | Java uses `instanceof`, while C# uses `is` for type checking.
+| Type manipulation (object creation) | `new TypeName()`              | `new TypeName()`                     | Same syntax for creating a new instance of a class.
+| Type manipulation (instance modification) | `obj.field = value;`      | `obj.field = value;`                 | Both allow modification of instance fields with the same syntax.
+|===

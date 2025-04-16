@@ -1,0 +1,17 @@
+= Package and Namespace Comparison
+
+== Concept
+This section compares the package and namespace keywords in Java and C#.
+
+[cols="2,2,3", options="header"]
+|===
+| **Concept**                     | **Java**                          | **C#**                               | **Notes** 
+
+| Package/Namespace declaration   | `package packageName;`            | `namespace NamespaceName;`           | Declared at the top of the file to organize classes.
+| Importing types                 | `import package.Class;`           | `using Namespace.Class;`             | Used to include external types into the current file.
+| File organization                | Folders mirror package names      | Folder structure doesn't have to match namespace | Java typically enforces file/folder structure matching the package.
+| Access to external types        | `import`                          | `using`                             | Helps use types without fully qualifying their names.
+| Built-in packages/namespaces    | `java.util`, `java.io`, etc.      | `System`, `System.Collections`, etc.  | Both have base libraries for essential functionalities.
+| Nested packages/namespaces      | Allowed (`package a.b.c;`)        | Allowed (`namespace A.B.C;`)         | Both support nested naming hierarchies.
+| Main keyword(s)                 | `package`, `import`               | `namespace`, `using`                 | Different keywords, but similar purposes.
+|===

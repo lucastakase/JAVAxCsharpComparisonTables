@@ -1,0 +1,20 @@
+= Unmanaged Code Keywords Comparison
+
+== Concept
+This section compares the unmanaged code keywords in Java and C#.
+
+[cols="2,2,3", options="header"]
+|===
+| **Concept**              | **Java**                      | **C#**                              | **Notes** 
+
+| `native` keyword         | `native`                      | N/A                                 | Java uses the `native` keyword to declare methods implemented in native (non-Java) code. C# does not have a direct equivalent.
+| `unsafe` keyword         | N/A                           | `unsafe`                            | C# uses `unsafe` to define blocks of code that can interact with unmanaged memory or pointer operations.
+| `extern` keyword         | N/A                           | `extern`                            | In C#, `extern` is used to define methods that are implemented externally, typically in unmanaged code (e.g., through P/Invoke).
+| `pointer` operations     | N/A                           | Supports pointer arithmetic with `unsafe` blocks | Java does not support pointers directly. C# uses pointers in `unsafe` blocks for working with memory addresses directly.
+| `DllImport` attribute    | N/A                           | `[DllImport("libraryName")]`       | C# uses the `[DllImport]` attribute to call unmanaged code (such as C or C++ functions) from shared libraries.
+| `Memory Management`      | Managed only (no direct access to memory) | Allows memory manipulation via pointers in `unsafe` context | Java has managed memory and no direct access to memory. C# provides tools for managing memory directly with `unsafe` code.
+| `GC Handle`              | N/A                           | `GCHandle`                         | C# provides `GCHandle` to prevent objects from being garbage collected when they need to be accessed from unmanaged code.
+| `Stackalloc` keyword     | N/A                           | `stackalloc`                       | C# uses `stackalloc` to allocate memory on the stack, useful for unmanaged memory handling.
+| `Marshal` class          | N/A                           | `Marshal`                          | C# provides the `Marshal` class for working with unmanaged memory and for copying data to/from unmanaged structures.
+| `Pinned` objects         | N/A                           | `fixed`                            | C# uses `fixed` to pin objects in memory so that they do not move during garbage collection (important for unmanaged code).
+|===

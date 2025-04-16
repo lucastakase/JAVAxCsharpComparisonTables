@@ -1,0 +1,27 @@
+= Flow Control Keywords Comparison
+
+== Concept
+This section compares the flow control keywords in Java and C#.
+
+[cols="2,2,3", options="header"]
+|===
+| **Concept**            | **Java**                      | **C#**                              | **Notes** 
+
+| `if` statement          | `if (condition) { ... }`      | `if (condition) { ... }`            | Same syntax for conditional execution. 
+| `else` statement        | `else { ... }`                | `else { ... }`                      | Same syntax for else block. 
+| `else if` statement     | `else if (condition) { ... }` | `else if (condition) { ... }`       | Both use `else if` for chaining multiple conditions.
+| `switch` statement      | `switch (value) { ... }`      | `switch (value) { ... }`            | Same syntax, but C# allows `switch` on enums and pattern matching (C# 7.0+).
+| `case` statement        | `case value:`                 | `case value:`                       | Both use `case` to define options in a `switch` block.
+| `break` statement       | `break;`                      | `break;`                            | Same syntax for breaking out of loops or switch statements.
+| `continue` statement    | `continue;`                   | `continue;`                         | Same syntax to skip the current iteration of a loop.
+| `return` statement      | `return value;`               | `return value;`                     | Both use `return` to exit a method and return a value.
+| `try-catch` block       | `try { ... } catch (Exception e) { ... }` | `try { ... } catch (Exception e) { ... }` | Same syntax for exception handling.
+| `finally` block         | `finally { ... }`             | `finally { ... }`                   | Same syntax to specify code that runs after a `try-catch` block.
+| `throw` statement       | `throw new Exception("message");` | `throw new Exception("message");`    | Both use `throw` to raise an exception.
+| `goto` statement        | N/A                           | `goto label;`                       | C# allows `goto`, but Java does not.
+| `while` loop            | `while (condition) { ... }`   | `while (condition) { ... }`         | Same syntax for a basic `while` loop.
+| `do-while` loop         | `do { ... } while (condition);` | `do { ... } while (condition);`      | Both use `do-while` loops with the same syntax.
+| `for` loop              | `for (int i = 0; i < n; i++) { ... }` | `for (int i = 0; i < n; i++) { ... }` | Same syntax for a classic `for` loop.
+| `foreach` loop          | `for (Type var : array) { ... }` | `foreach (Type var in array) { ... }` | C# uses `foreach` with a slightly different syntax but same purpose.
+| `label` for loop        | `label: for (int i = 0; i < n; i++) { ... }` | `label: for (int i = 0; i < n; i++) { ... }` | Both support labeled loops, but rarely used.
+|===

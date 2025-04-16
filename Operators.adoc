@@ -1,0 +1,27 @@
+= Operators Comparison
+
+== Concept
+This section compares the operators in Java and C#.
+
+[cols="2,2,3", options="header"]
+|===
+| **Concept**                  | **Java**                        | **C#**                              | **Notes** 
+
+| Assignment operator          | `=`                             | `=`                                 | Same syntax for assigning values to variables.
+| Arithmetic operators         | `+`, `-`, `*`, `/`, `%`         | `+`, `-`, `*`, `/`, `%`             | Same syntax for basic arithmetic operations.
+| Increment/Decrement operators | `++`, `--`                      | `++`, `--`                          | Same syntax for incrementing or decrementing values.
+| Comparison operators         | `==`, `!=`, `>`, `<`, `>=`, `<=` | `==`, `!=`, `>`, `<`, `>=`, `<=`     | Same comparison operators for equality, inequality, and relational checks.
+| Logical operators            | `&&`, `||`, `!`                 | `&&`, `||`, `!`                     | Same logical operators for AND, OR, and NOT.
+| Bitwise operators            | `&`, `|`, `^`, `~`, `<<`, `>>`, `>>>` | `&`, `|`, `^`, `~`, `<<`, `>>`, `>>>` | Same syntax for bitwise operations. C# also supports unsigned right shift (`>>>`).
+| Conditional (ternary) operator| `condition ? expr1 : expr2`     | `condition ? expr1 : expr2`         | Same syntax for the ternary conditional operator.
+| Null coalescing operator     | N/A                             | `??`                                | C# has the null-coalescing operator (`??`) to check for null values.
+| Null conditional operator    | N/A                             | `?.`                                | C# uses `?.` to safely access members of an object that might be null.
+| String concatenation         | `+`                             | `+`                                 | Both use `+` for concatenating strings.
+| Type cast operator           | `(Type) value`                  | `(Type) value`                      | Same syntax for casting a value to a specific type.
+| `is` operator                | N/A                             | `is`                                | C# uses `is` for type checking (e.g., `obj is Type`).
+| `instanceof` operator        | `instanceof`                    | N/A                                 | Java uses `instanceof` for type checking, while C# uses `is`.
+| `new` operator               | `new`                           | `new`                               | Both use `new` for object creation.
+| `sizeof` operator            | N/A                             | `sizeof`                            | C# supports `sizeof` to get the size of a type, but Java does not have a direct equivalent.
+| `await` keyword              | N/A                             | `await`                             | C# uses `await` for asynchronous programming, which Java handles with `CompletableFuture` or similar.
+| `async` keyword              | N/A                             | `async`                             | C# uses `async` to define asynchronous methods, while Java uses different approaches for concurrency.
+|===

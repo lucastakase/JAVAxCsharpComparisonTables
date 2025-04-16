@@ -1,0 +1,14 @@
+= Summary of Java and C# Syntax Comparisons
+
+== Concept
+This section provides a summary of the key syntax comparisons between Java and C#.
+
+[cols="2,2,3", options="header"]
+|===
+| **Concept**                     | **Java**                          | **C#**                               | **Notes** 
+
+| Package and Namespace Comparison | `package packageName;`, `import package.Class;` | `namespace NamespaceName;`, `using Namespace.Class;` | Organize and access external types.
+| Data Types Comparison            | `byte`, `short`, `int`, `long`, `float`, `double`, `char`, `boolean`, `String`, `final` | `byte`, `short`, `int`, `long`, `float`, `double`, `char`, `bool`, `string`, `const`, `readonly` | Differences in constant declaration, null handling, and primitives vs objects.
+| Class, Interface, and Member Comparison | `class ClassName`, `interface InterfaceName`, `enum EnumName`, `abstract class ClassName`, `private`, `public`, `protected`, `static`, `final` | `class ClassName`, `interface InterfaceName`, `enum EnumName`, `abstract class ClassName`, `private`, `public`, `protected`, `static`, `const`, `readonly` | Similar declarations, but differences in constant and read-only fields, access modifiers, and type checking.
+
+|===
