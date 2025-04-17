@@ -1,0 +1,28 @@
+= Method Comparison: Java vs C#
+
+== Concept
+This section compares how methods are declared, modified, and invoked in Java and C#.
+
+[cols="1,1,1,3", options="header"]
+|===
+| **Concept**                    | **Java**                                          | **C#**                                              | **Notes**
+
+| Method declaration             | `int myMethod(String s, boolean b)`              | `int MyMethod(string s, bool b)`                    | Similar declaration, but C# allows attributes before method signature.
+| Calling superclass method      | `super.methodName()`                             | `base.MethodName()`                                 | `super` in Java and `base` in C# serve the same purpose.
+| Method modifiers - access      | `public`, `private`, `protected`, package-private | `public`, `private`, `protected`, `internal`, `protected internal` | C# includes more access levels.
+| Method modifiers - inheritance | `final`, `abstract`                              | `virtual`, `abstract`, `override`, `sealed`, `new`  | C# offers more granular control over inheritance behavior.
+| Virtual methods                | All non-final instance methods are virtual       | Must be explicitly marked `virtual`                 | Polymorphism is implicit in Java, explicit in C#.
+| Overriding methods             | Same signature implicitly overrides              | Must use `override` keyword                         | C# enforces explicit overrides.
+| Method hiding                  | Only with static methods                         | Any method with `new` modifier                      | C# hides base method unless `override` is used.
+| Static methods                 | Supported                                         | Supported                                           | No behavioral difference.
+| Abstract methods              | Must be declared in abstract classes             | Must be in abstract classes                         | Both cannot have a body.
+| Method overloading             | Supported                                         | Supported                                           | Both support methods with same name but different parameter lists.
+| Modifiers mutual exclusivity   | Fewer restrictions                               | `static`, `virtual`, `override` are mutually exclusive | C# imposes more rules for clarity.
+| Pass-by-value only             | Yes                                              | Default is pass-by-value                            | Same default behavior.
+| Reference parameters           | Not supported                                    | Supported via `ref` and `out`                       | Enables method to change caller’s variables.
+| Parameter arrays (varargs)     | `int... values`                                  | `params int[] values`                               | Similar functionality; syntax differs.
+| Rules for parameter arrays     | Must be last, allows 0 or more arguments         | Same: must be last parameter                        | Behaves like an array inside the method.
+| Parameter array example        | `method("msg", 1, 2, 3)`                         | `Method("msg", 1, 2, 3)`                            | Both languages allow passing inline values or arrays.
+| Method attributes              | Not supported                                    | Supported                                           | C# methods can be annotated with attributes like `[Obsolete]`.
+|===
+

@@ -1,0 +1,23 @@
+= Versioning and Inheritance: Java vs C#
+
+== Concept
+This section compares how method inheritance, versioning, overriding, and hiding behave in Java and C#.
+
+[cols="1,1,1,3", options="header"]
+|===
+| **Concept**                  | **Java**                                        | **C#**                                                 | **Notes**
+
+| Default behavior             | Methods are virtual by default                 | Methods are non-virtual by default                     | Java allows overriding without annotation; C# requires `virtual` and `override`.
+| Method overriding            | Implicit if signatures match                  | Requires `override` keyword                            | Ensures developer intent in C#.
+| Method hiding                | Only applies to static methods                | Applies to all methods; use `new` keyword              | Hiding breaks polymorphism in C#.
+| Runtime behavior             | Uses runtime type to resolve method call      | Virtual methods use runtime type; non-virtual use reference type | Java always favors runtime type for non-static methods.
+| Versioning issue: same signature | Overrides method unintentionally              | Compiler warning if hiding not explicit                | Java may break expected base behavior after update.
+| Versioning issue: different return type | Compile error if return types mismatch     | Compile error                                           | Both languages block override if return types are incompatible.
+| Final / Sealed methods       | Use `final` to prevent override               | Use `sealed` (with `override`)                         | C# only allows sealing overridden members, not base declarations.
+| Access to base class method  | `super.method()`                              | `base.Method()`                                        | Same purpose and syntax.
+| New virtual member in hierarchy | Not supported as concept                    | Use `new virtual` for new specialization point         | Introduces a new override chain in derived classes.
+| Compiler protection          | No warning for accidental hiding              | Warning if `new` not used when hiding a member         | C# enforces clarity between override vs hide.
+| Method type check            | `instanceof`                                  | `is` operator                                          | Used to validate object type before casting.
+| Static methods and hiding    | Static methods can be hidden, not overridden  | Static methods can be hidden with `new`                | Neither language allows overriding static methods.
+|===
+
