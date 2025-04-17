@@ -6,41 +6,32 @@ This repository provides a detailed comparison of **Java** and **C#** syntax acr
 
 This project helps developers who are familiar with one language (Java or C#) transition to the other. The tables provide clear, side-by-side comparisons to highlight similarities and differences between the two languages.
 
-## Sections Included:
-
-- **Package and Namespace Comparison**  
-  Comparison of how packages/namespaces are declared, used, and organized in Java and C#.
-
-- **Data Types Comparison**  
-  A comparison of primitive and object data types in both Java and C#, including handling of constants, null values, and default initialization values.
-
-- **Class, Interface, and Member Comparison**  
-  Comparison of how classes, interfaces, enums, and class members (like access modifiers, static members, constants, etc.) are declared and used.
-
-- **Summary Table**  
-  A consolidated summary of all the comparisons, providing a quick reference for the main points discussed.
-
 ## Table of Contents
 
 ### Core Concepts
 - [Access Modifier Keyword Comparison](AccessModifierKeywordComparison.adoc)  
 - [Type Declaration & Access Manipulation](TypeDeclarationAccessManipulationKeywords.adoc)  
 - [Simple Types & Constants](SimpleTypeConstantKeywords.adoc)  
+- [Method Modifiers](MethodModifier.adoc)  
 
 ### Control Flow
 - [Flow Control Keywords](FlowControlKeyword.adoc)  
-- [Exception Handling](ExceptionHandlingKeywords.adoc)  
+- [Exception Handling Keywords](ExceptionHandlingKeywords.adoc)  
 
 ### Operators & Expressions
 - [Operators Reference](Operators.adoc)  
 - [Precedence & Associativity Rules](PrecedenceAssociativity.adoc)  
 
+### Data Structures
+- [Arrays](Array.adoc)  
+
 ### Advanced Topics
 - [Package/Namespace Management](PackageNamespaceKeywords.adoc)  
 - [Unmanaged Code Keywords](UnmanagedCodeKeywords.adoc)  
+- [Versioning & Inheritance Members](VersioningInheritanceMembers.adoc)  
 
 ### Overview
-- [Summary of Concepts](Summary.adoc)
+- [Summary of Concepts](Summary.adoc)  
 
 ## Structure
 
